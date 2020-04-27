@@ -7,9 +7,9 @@ Mayank Phadke:
 3. Item Details
 4. Drop Off Locations
 
-5. Item Search
-6. Item Search Results
-7. Management Homescreen
+5. Item Search (Alec)
+6. Item Search Results (Alec)
+7. Management Homescreen (Alec)
 
 8. Item Entry Log Viewing
 9. Item Claim Log Viewing
