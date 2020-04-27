@@ -2,15 +2,15 @@
 This is a working prototype for team G's project: Lost and Found System
 
 Mayank Phadke:
-Login
-Item Entry Form
-Item Details
-Drop Off Locations
+1. Login
+2. Item Entry Form
+3. Item Details
+4. Drop Off Locations
 
-Item Search
-Item Search Results
-Management Homescreen
+5. Item Search
+6. Item Search Results
+7. Management Homescreen
 
-Item Entry Log Viewing
-Item Claim Log Viewing
-Item Claim Form
+8. Item Entry Log Viewing
+9. Item Claim Log Viewing
+10. Item Claim Form
