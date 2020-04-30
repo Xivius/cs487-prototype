@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<style>
+    body {
+        overflow: hidden
+    }
+
+    #top {
+        height: 10vh;
+    }
+
+    #main {
+        height: 75vh;
+        padding-top: 3%;
+    }
+
+    #list {
+        height: -webkit-fill-available;
+        overflow: auto;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Drop Off Locations</title>
+</head>
+
+<body>
+    <div id="top" class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <button class="btn btn-outline-dark">Back</button>
+        </div>
+        <div class="col-md-6 text-center p-3">
+            <h1>Lost and Found App</h1>
+        </div>
+        <div class="col-md-3 text-center">
+        </div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div id="main" class="row justify-content-center">
+        <div class="col-md-7">
+            <h1 class="h4 mb-3 font-weight-normal text-center">Drop Off Locations</h1>
+            <div class="list-group" id="list">
+                <a class="list-group-item list-group-item-action flex-column align-items-start bg-light">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Herman Hall</h5>
+                    </div>
+                    <p class="mb-1">3301 S Dearborn Street, Chicago, IL, 60616</p>
+                </a>
+                <a class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Keating Hall</h5>
+                    </div>
+                    <p class="mb-1">3040 South Wabash Avenue, Chicago, IL, 60616</p>
+                </a>
+                <a class="list-group-item list-group-item-action flex-column align-items-start bg-light">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Main Building</h5>
+                    </div>
+                    <p class="mb-1">3300 South Federal Street, Chicago, IL, 60616</p>
+                </a>
+                <a class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">McCormick Tribune Campus Center</h5>
+                    </div>
+                    <p class="mb-1">3201 South State Street, Chicago, IL, 60616</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
