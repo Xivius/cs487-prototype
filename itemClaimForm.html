@@ -1,41 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Item Claim Form</title>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  </head>
+<!doctype html>
+<html lang="en" class="h-100">
 
-  <body class="w-75 mt-5 mx-auto">
-    <header>
+<style>
+    body {
+        overflow: hidden
+    }
+    #top {
+        height: 10vh;
+    }
 
-    </header>
+    #main {
+        height: fit-content;
+        padding-top: 3%;
+    }
+</style>
 
-    <main class="d-block">
-      <form class="m-5">
-        <div class="d-block form-group">
-          <label for="exampleInputEmail1">School ID #:</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Item Entry Form</title>
+</head>
+
+<body class="h-100">
+    <div id="top" class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <button class="btn btn-outline-dark">Back</button>
         </div>
+        <div class="col-md-6 text-center">
+            <h1 style="padding: 20px">
+                Lost and Found App
+            </h1>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div id="main" class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <h1 class="h3 mb-3 font-weight-normal text-center">Item Claim Form</h1>
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="name" class="form-control" id="itemName" placeholder="Enter Item Name">
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Select Item from Lost Item List</label>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">TimeStamp</th>
+                          <th scope="col">Item Name</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Item Photo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2020-05-01T18:14:39+00:00</th>
+                          <td>Backpack</td>
+                          <td>IIT Tower</td>
+                          <td>Small, red backpack. </td>
+                          <td><a></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label>Upload Photo ID: </label>
+                        <button class="btn btn-sm btn-secondary">Upload</button>
+                    </p>
+                </div>
+                <button class="btn btn-lg btn-primary float-right" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
 
-        <button type="button" id="select-table" class="btn btn-secondary">Select Item from Lost Item List</button>
-        <button type="button" class="btn btn-secondary">
-          <svg class="bi bi-card-image" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
-            <path d="M10.648 7.646a.5.5 0 01.577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 01.63-.062l2.66 1.773 3.71-3.71z"/>
-            <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd"/>
-          </svg>
-        </button>
-      </form>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-primary">Primary</button>
-    </main>
-
-    <footer>
-
-    </footer>
-  </body>
 </html>
