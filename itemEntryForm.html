@@ -1,25 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Lost and Found App</title>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  </head>
+<!doctype html>
+<html lang="en" class="h-100">
 
-  <body>
-    <header>
+<style>
+    body {
+        overflow: hidden
+    }
+    #top {
+        height: 10vh;
+    }
 
-    </header>
+    #main {
+        height: fit-content;
+        padding-top: 3%;
+    }
+</style>
 
-    <main>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Item Entry Form</title>
+</head>
 
-    </main>
+<body class="h-100">
+    <div id="top" class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <button class="btn btn-outline-dark">Back</button>
+        </div>
+        <div class="col-md-6 text-center">
+            <h1 style="padding: 20px">
+                Lost and Found App
+            </h1>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div id="main" class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <h1 class="h3 mb-3 font-weight-normal text-center">Item Details Form</h1>
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="name" class="form-control" id="itemName" placeholder="Enter Item Name">
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Item Description</label>
+                    <textarea row="3" class="form-control" id="itemDescription"
+                        placeholder="Enter Item Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">MTCC</a>
+                                    <a class="dropdown-item" href="#">Galvin Library</a>
+                                    <a class="dropdown-item" href="#">Keating Sports Center</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label for="date">Date Item was Found:</label>
+                        <input type="date" id="date">
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label for="time">Time Item was Found:</label>
+                        <input type="time" id="time">
+                        <small>(hh:mm ss)</small>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label>Item Photo: </label>
+                        <button class="btn btn-sm btn-secondary">Upload</button>
+                    </p>
+                </div>
+                <button class="btn btn-lg btn-primary float-right" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
 
-    <footer>
-
-    </footer>
-  </body>
 </html>
