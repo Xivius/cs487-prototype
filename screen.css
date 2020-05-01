@@ -1,0 +1,11 @@
+body {
+  overflow: hidden
+}
+#top {
+  height: 10vh;
+}
+
+#main {
+  height: fit-content;
+  padding-top: 3%;
+}

@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="screen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Item Claim Log</title>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   </head>
 
   <body>
-    <div id="top" class="row align-items-center">
+    <header id="top" class="row align-items-center">
         <div class="col-md-3 text-center">
-            <button class="btn btn-outline-dark">Back</button>
+          <button class="btn btn-outline-dark">Back</button>
         </div>
         <div class="col-md-6 text-center">
-            <h1 style="padding: 20px">
-                Lost and Found App
-            </h1>
+          <h1 style="padding: 20px">
+            Lost and Found App
+          </h1>
         </div>
-        <div class="col-md-3"></div>
-        <div class="dropdown-divider"></div>
+        <div class="col-md-3 text-center">
+          <button class="btn btn-outline-primary">Drop-Off Locations</button>
+        </div>
+    </header>
+    <div class="dropdown-divider mt-4"></div>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">TimeStamp</th>
-              <th scope="col">Item Name</th>
-              <th scope="col">Location</th>
-              <th scope="col">Description</th>
-              <th scope="col">Item Photo</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">2020-05-01T18:14:39+00:00</th>
-              <td>Backpack</td>
-              <td>IIT Tower</td>
-              <td>Small, red backpack. </td>
-              <td><a></a></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-
-    <main>
-
+    <main class="w-75 mt-5 mx-auto">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">TimeStamp</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Description</th>
+            <th scope="col">Item Photo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">2020-05-01T18:14:39+00:00</th>
+            <td>Backpack</td>
+            <td>IIT Tower</td>
+            <td>Small, red backpack. </td>
+            <td><a></a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
-
-    <footer>
-
-    </footer>
   </body>
 </html>

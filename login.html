@@ -1,25 +1,10 @@
 <!doctype html>
 <html lang="en" class="h-100">
-
-<style>
-    body {
-        overflow: hidden
-    }
-
-    #top {
-        height: 10vh;
-    }
-
-    #main {
-        height: 90vh;
-        padding-top: 10%;
-    }
-</style>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="screen.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -27,20 +12,27 @@
 </head>
 
 <body class="h-100">
-    <div id="top" class="row">
-        <div class="col-md-12 text-center">
+    <header id="top" class="row align-items-center">
+        <div class="col-md-3 text-center">
+            <button class="btn btn-outline-dark">Back</button>
+        </div>
+        <div class="col-md-6 text-center">
             <h1 style="padding: 20px">
                 Lost and Found App
             </h1>
         </div>
-    </div>
-    <div class="dropdown-divider"></div>
+        <div class="col-md-3 text-center">
+            <button class="btn btn-outline-primary">Drop-Off Locations</button>
+        </div>
+    </header>
+    <div class="dropdown-divider mt-4"></div>
+
     <div id="main" class="row">
         <div class="col-md-4 offset-md-4 text-center">
             <form class="form-signin">
                 <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
                 <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email address" required autofocus>
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 <div class="checkbox mb-3">

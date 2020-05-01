@@ -4,6 +4,7 @@
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="screen.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -11,28 +12,33 @@
 </head>
 
 <body>
-    <div class="container">
-     <div class="row">
-      <div class="col-sm-6">
-        <h2>Public Safety Home Page</h2>
+  <header id="top" class="row align-items-center">
+      <div class="col-md-3 text-center">
+        <button class="btn btn-outline-dark">Back</button>
       </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-2"><button type="button" class="btn btn-primary">Drop off locations</button></div>
-     </div>
-     <div class="" style="height:40px;">
-
-     </div>
-      <div class="row">
-        <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Entry Log</button></div>
-
-        <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Entry Form</button></div>
-
-        <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Claim Log</button></div>
-
-        <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Claim Form</button></div>
-
+      <div class="col-md-6 text-center">
+        <h1 style="padding: 20px">
+          Public Safety Home Page
+        </h1>
       </div>
+      <div class="col-md-3 text-center">
+        <button class="btn btn-outline-primary">Drop-Off Locations</button>
+      </div>
+  </header>
+  <div class="dropdown-divider mt-4"></div>
+
+  <main class="container mt-5">
+    <div class="row">
+      <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Entry Log</button></div>
+
+      <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Entry Form</button></div>
+
+      <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Claim Log</button></div>
+
+      <div class="col-sm-2"><button type="button" class="btn btn-primary">Item Claim Form</button></div>
+
     </div>
+  </main>
 </body>
 
 </html>
