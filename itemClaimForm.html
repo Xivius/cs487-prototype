@@ -1,92 +1,90 @@
 <!doctype html>
 <html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="screen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Item Claim Form</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="screen.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <title>Item Claim Form</title>
-</head>
-
-<body class="h-100">
-  <header id="top" class="row align-items-center">
-      <div class="col-md-3 text-center">
-        <a href="management.html">
-          <button class="btn btn-outline-dark">Back</button>
-        </a>
-      </div>
-      <div class="col-md-6 text-center">
-        <h1 style="padding: 20px">
-          Lost and Found App
-        </h1>
-      </div>
-      <div class="col-md-3 text-center">
-        <a href="dropOffLocations.html">
-          <button class="btn btn-outline-primary">
-            Drop-Off Locations
-          </button>
-        </a>
-      </div>
-  </header>
-  <div class="dropdown-divider mt-4"></div>
-
-  <main id="main" class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <h1 class="h3 mb-3 font-weight-normal text-center">Item Claim Form</h1>
-        <div class="form-group">
-          <label for="itemName">Item Name</label>
-          <input type="name" class="form-control" id="itemName" placeholder="Enter Item Name">
+  <body>
+    <header id="top" class="row align-items-center">
+        <div class="col-md-3 text-center">
+          <a href="management.html">
+            <button class="btn btn-outline-dark">Back</button>
+          </a>
         </div>
-        <div class="form-group">
-          <label for="itemDescription">Select Item from Lost Item List</label>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">TimeStamp</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Location</th>
-                <th scope="col">Description</th>
-                <th scope="col">Item Photo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">2020-05-01T18:14:39+00:00</th>
-                <td>Backpack</td>
-                <td>IIT Tower</td>
-                <td>Small, red backpack. </td>
-                <td><a></a></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-md-6 text-center">
+          <h1 style="padding: 20px">
+            Lost and Found App
+          </h1>
         </div>
-        <div class="form-group">
-          <p>
-            <label>Upload Photo ID: </label>
-            <button class="btn btn-sm btn-secondary">Upload</button>
-          </p>
+        <div class="col-md-3 text-center">
+          <a href="dropOffLocations.html">
+            <button class="btn btn-outline-primary">
+              Drop-Off Locations
+            </button>
+          </a>
         </div>
-        <button class="btn btn-lg btn-primary float-right" type="submit">Submit</button>
-      </form>
-    </div>
-  </main>
-</body>
+    </header>
+    <div class="dropdown-divider mt-4"></div>
 
+    <main id="main" class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <h1 class="h3 mb-3 font-weight-normal text-center">Item Claim Form</h1>
+          <div class="form-group">
+            <label for="itemName">Item Name</label>
+            <input type="name" class="form-control" id="itemName" placeholder="Enter Item Name">
+          </div>
+          <div class="form-group">
+            <label for="itemDescription">Select Item from Lost Item List</label>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">TimeStamp</th>
+                  <th scope="col">Item Name</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Item Photo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2020-05-01T18:14:39+00:00</th>
+                  <td>Backpack</td>
+                  <td>IIT Tower</td>
+                  <td>Small, red backpack. </td>
+                  <td><a></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="form-group">
+            <p>
+              <label>Upload Photo ID: </label>
+              <button class="btn btn-sm btn-secondary">Upload</button>
+            </p>
+          </div>
+          <button class="btn btn-lg btn-primary float-right" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
