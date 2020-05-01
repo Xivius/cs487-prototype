@@ -1,29 +1,10 @@
 <!doctype html>
 <html lang="en" class="h-100">
-<style>
-    body {
-        overflow: hidden
-    }
-
-    #top {
-        height: 10vh;
-    }
-
-    #main {
-        height: 75vh;
-        padding-top: 3%;
-    }
-
-    #list {
-        height: -webkit-fill-available;
-        overflow: auto;
-    }
-</style>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="screen.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -42,10 +23,10 @@
         </div>
     </div>
     <div class="dropdown-divider mt-4"></div>
-    <div id="main" class="row justify-content-center">
+    <main id="main" class="row justify-content-center">
         <div class="col-md-7">
             <h1 class="h4 mb-3 font-weight-normal text-center">Drop Off Locations</h1>
-            <div class="list-group" id="list">
+            <div class="list-group" id="drop-off-list">
                 <a class="list-group-item list-group-item-action flex-column align-items-start bg-light">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Herman Hall</h5>
@@ -72,7 +53,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

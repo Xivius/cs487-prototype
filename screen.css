@@ -1,8 +1,15 @@
 body {
-  overflow: hidden
+  overflow-x: hidden;
 }
+
 #top {
   height: 10vh;
+}
+
+#drop-off-list {
+    height: 75vh;
+    overflow: auto;
+    padding-top: 3%;
 }
 
 #main {
