@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+header h1 {
+  padding: 1.250rem; /* 20px */
+}
+
 #top {
   height: 10vh;
 }
