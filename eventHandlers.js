@@ -3,7 +3,7 @@ window.onload = main;
 function main() {
     document.getElementById("backButton").addEventListener("click", () => {
         history.back();
-    })
+    });
 
     document.getElementById("login").addEventListener("click", (e) => {
         e.preventDefault();
@@ -14,15 +14,16 @@ function main() {
         if (validateEmail(email) && password !== "") {
             error.classList.add("d-none");
             if(email.includes("admin")) {
-                window.location.href = "management.html"
+                window.location.href = "management.html";
+            } else {
+                window.location.href = "itemSearch.html";
             }
         } else {
             error.classList.remove("d-none");
         }
-        
-    })
+    });
+}
 
-    function validateEmail(email) {
-        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
-    }
+function validateEmail(email) {
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 }

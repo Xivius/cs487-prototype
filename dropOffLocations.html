@@ -1,60 +1,63 @@
 <!doctype html>
 <html lang="en" class="h-100">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="screen.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="eventHandlers.js"></script>
-    <title>Drop Off Locations</title>
-</head>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="screen.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="eventHandlers.js"></script>
+      <title>Drop Off Locations</title>
+  </head>
 
-<body>
-    <header id="top" class="row align-items-center">
-        <div class="col-md-3 text-center">
-            <button id="backButton" class="btn btn-outline-dark">Back</button>
-        </div>
-        <div class="col-md-6 text-center p-3">
-            <h1>Lost and Found App</h1>
-        </div>
-        <div class="col-md-3 text-center">
-        </div>
-    </header>
-    <div class="dropdown-divider mt-4"></div>
-    <main id="main" class="row justify-content-center">
-        <div class="col-md-7">
-            <h1 class="h4 mb-3 font-weight-normal text-center">Drop Off Locations</h1>
-            <div class="list-group" id="drop-off-list">
-                <a class="list-group-item list-group-item-action flex-column align-items-start bg-light">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Herman Hall</h5>
-                    </div>
-                    <p class="mb-1">3301 S Dearborn Street, Chicago, IL, 60616</p>
-                </a>
-                <a class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Keating Hall</h5>
-                    </div>
-                    <p class="mb-1">3040 South Wabash Avenue, Chicago, IL, 60616</p>
-                </a>
-                <a class="list-group-item list-group-item-action flex-column align-items-start bg-light">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Main Building</h5>
-                    </div>
-                    <p class="mb-1">3300 South Federal Street, Chicago, IL, 60616</p>
-                </a>
-                <a class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">McCormick Tribune Campus Center</h5>
-                    </div>
-                    <p class="mb-1">3201 South State Street, Chicago, IL, 60616</p>
-                </a>
-            </div>
-        </div>
-    </main>
-</body>
-
+  <body class="h-100">
+      <header id="top" class="row align-items-center">
+          <div class="col-md-3 text-center">
+              <button id="backButton" class="btn btn-outline-dark">Back</button>
+          </div>
+          <div class="col-md-6 text-center p-3">
+              <h1>Lost and Found App</h1>
+          </div>
+          <div class="col-md-3 text-center">
+          </div>
+      </header>
+      <div class="dropdown-divider mt-4"></div>
+      <main id="main" class="row justify-content-center">
+          <div class="col-md-7">
+              <h1 class="h4 mb-3 font-weight-normal text-center">Drop Off Locations</h1>
+              <div class="list-group" id="drop-off-list">
+                  <a class="list-group-item list-group-item-action flex-column align-items-start bg-light" target="_blank"
+                    href="https://www.google.com/maps/place/Hermann+Hall/@41.8356848,-87.6305673,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c72aad4869b:0x9e525ec571fd40cd!8m2!3d41.8356848!4d-87.6283733">
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Herman Hall</h5>
+                      </div>
+                      <p class="mb-1">3241 S Federal St, Chicago, IL 60616</p>
+                  </a>
+                  <a class="list-group-item list-group-item-action flex-column align-items-start" target="_blank"
+                    href="https://www.google.com/maps/place/Keating+Sports+Center,+3040+S+Wabash+Ave,+Chicago,+IL+60616/@41.8389938,-87.627772,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c73b0d9cd1d:0x76695de702277b9b!8m2!3d41.8389938!4d-87.625578">
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Keating Hall</h5>
+                      </div>
+                      <p class="mb-1">3040 South Wabash Avenue, Chicago, IL, 60616</p>
+                  </a>
+                  <a class="list-group-item list-group-item-action flex-column align-items-start bg-light" target="_blank"
+                    href="https://www.google.com/maps/place/IIT+Main+Building/@41.8343009,-87.6314441,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c1297a830c5:0xa899f9eb0ab48dd4!8m2!3d41.8343009!4d-87.6292501">
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Main Building</h5>
+                      </div>
+                      <p class="mb-1">3300 South Federal Street, Chicago, IL, 60616</p>
+                  </a>
+                  <a class="list-group-item list-group-item-action flex-column align-items-start" target="_blank"
+                    href="https://www.google.com/maps/place/McCormick+Tribune+Campus+Center,+3201+S+State+St,+Chicago,+IL+60616/@41.8356712,-87.6280094,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c732e4428b7:0xdd1e3aeeb320e5e7!8m2!3d41.8356712!4d-87.6258154">
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">McCormick Tribune Campus Center</h5>
+                      </div>
+                      <p class="mb-1">3201 South State Street, Chicago, IL, 60616</p>
+                  </a>
+              </div>
+          </div>
+      </main>
+  </body>
 </html>

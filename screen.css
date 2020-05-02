@@ -7,13 +7,26 @@ body {
   height: 10vh;
 }
 
+#main {
+  height: fit-content;
+  padding-top: 3%;
+}
+
+/* dropOffLocations.html */
 #drop-off-list {
     height: 75vh;
     overflow: auto;
     padding-top: 3%;
 }
 
-#main {
-  height: fit-content;
-  padding-top: 3%;
+/* itemSearch.html */
+#items {
+  overflow: auto;
+  height: 59vh;
+}
+#item {
+  height: 10vh;
+}
+.item-image {
+  height: 270px;
 }
