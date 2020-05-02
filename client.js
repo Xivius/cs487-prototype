@@ -3,47 +3,55 @@ window.onload = main;
 function main() {
     var backBtn = document.getElementById("backButton");
     if (backBtn !== null) { // not all pages have back button
-        backBtn.addEventListener("click", () => {
-            history.back();
-        });
+        backBtn.addEventListener("click", goBack);
+    }
+
+    /* Event handler for backButton */
+    function goBack(e) {
+        e.preventDefault();
+        history.back();
     }
 
     var loginBtn = document.getElementById("login");
     if (loginBtn !== null) { // not all pages have login button
         /* Grab Database Data from Webservice */
         var request = new XMLHttpRequest();
-        request.addEventListener("readystatechange", login);
+        request.addEventListener("readystatechange", getCredentials);
         request.open("POST", "http://localhost:3000/");
         request.send();
     }
 
     /* Process Login Data from Database */
-    function login() {
+    function getCredentials(e) {
         if (this.readyState == 4 && this.status == 200) {
+            request.removeEventListener(e.type, getCredentials);
             var loginData = JSON.parse(this.responseText);
-            loginBtn.addEventListener("click", (e) => {
-                e.preventDefault();
-                var email = document.getElementById("email").value.trim();
-                var password = document.getElementById("password").value.trim();
-                var error = document.getElementById("error");
-                var incorrect = document.getElementById("incorrect");
-                var userType = validateCredentials(email, password, loginData);
-                if (userType !== null) {
-                    error.classList.add("d-none");
-                    incorrect.classList.add("d-none");
-                    if (userType === "admin") {
-                        window.location.href = "management.html";
-                    } else { // userType === "student"
-                        window.location.href = "itemSearch.html";
-                    }
-                } else if (!validateEmail(email)) {
-                    incorrect.classList.add("d-none");
-                    error.classList.remove("d-none");
-                } else if (validateEmail(email)) {
-                    incorrect.classList.remove("d-none");
-                    error.classList.add("d-none");
+            loginBtn.addEventListener("click", login);
+        }
+
+        /* Login button click Handler */
+        function login(e) {
+            e.preventDefault();
+            var email = document.getElementById("email").value.trim();
+            var password = document.getElementById("password").value.trim();
+            var error = document.getElementById("error");
+            var incorrect = document.getElementById("incorrect");
+            var userType = validateCredentials(email, password, loginData);
+            if (userType !== null) {
+                error.classList.add("d-none");
+                incorrect.classList.add("d-none");
+                if (userType === "admin") {
+                    window.location.href = "management.html";
+                } else { // userType === "student"
+                    window.location.href = "itemSearch.html";
                 }
-            });
+            } else if (!validateEmail(email)) {
+                incorrect.classList.add("d-none");
+                error.classList.remove("d-none");
+            } else if (validateEmail(email)) {
+                incorrect.classList.remove("d-none");
+                error.classList.add("d-none");
+            }
         }
     }
 
@@ -57,7 +65,7 @@ function main() {
     }
 
     /* Process Item Entry Data from Database */
-    function itemEntryHandler() {
+    function itemEntryHandler(e) {
         if (this.readyState == 4 && this.status == 200) {
             var itemEntryData = JSON.parse(this.responseText);
             var row, time, photo;
@@ -77,7 +85,7 @@ function main() {
                     photo = row.appendChild(document.createElement("td"))
                       .appendChild(document.createElement("a"));
                     photo.href = itemEntryData[i].item_photo;
-                    photo.appendChild(document.createTextNode(itemEntryData[i].item_photo));
+                    photo.appendChild(document.createTextNode("Photo Link"));
                 }
             }
         }
@@ -93,10 +101,9 @@ function main() {
     }
 
     /* Process Item Claim Data from Database */
-    function itemClaimHandler() {
+    function itemClaimHandler(e) {
         if (this.readyState == 4 && this.status == 200) {
             var itemEntryData = JSON.parse(this.responseText);
-            console.log(itemEntryData);
             var row, time, claim, photo;
             for (var i = 0; i < itemEntryData.length; i++) {
                 if (itemEntryData[i].timestamp_claimed !== null) {
@@ -118,13 +125,48 @@ function main() {
                     photo = row.appendChild(document.createElement("td"))
                       .appendChild(document.createElement("a"));
                     photo.href = itemEntryData[i].item_photo;
-                    photo.appendChild(document.createTextNode(itemEntryData[i].item_photo));
+                    photo.appendChild(document.createTextNode("Photo Link"));
                 }
             }
         }
     }
+
+    var itemClaimForm = document.getElementById("uploadClaim");
+    if (itemClaimForm !== null) { // not all pages have item claim form
+        /* Grab Database Data from Webservice */
+        /*var request = new XMLHttpRequest();
+        uploadClaim.addEventListener("click", itemClaimHandler);
+        request.open("POST", "http://localhost:3000/itemClaim");
+        request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        request.send();*/
+        itemClaimForm.addEventListener("click", function (e) {
+            e.preventDefault();
+            console.log('test');
+            history.back();
+        });
+    }
+
+    /* Send user form data to server side script */
+    /*function itemClaimHandler(e) {
+        e.preventDefault();
+        request.removeEventListener(e.type, itemClaimHandler);
+        var itemName = document.getElementById("itemName").value;
+        var row = document.querySelector("tr.active");
+        var photoID = document.getElementById("photoID").files[0];
+        history.back();
+    }*/
+
+    var itemEntryForm = document.getElementById("uploadEntry");
+    if (itemEntryForm !== null) {
+        itemEntryForm.addEventListener("click", function (e) {
+            e.preventDefault();
+            console.log('test');
+            history.back();
+        });
+    }
 }
 
+/* Secondary Functions Used in main() */
 function validateEmail(email) {
     return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 }

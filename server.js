@@ -25,7 +25,7 @@ var connection = mysql.createConnection({
 });
 connection.connect();
 
-/* Database Query */
+/* Database Login Credentials Query */
 var sql = "SELECT * FROM cs_487_project.Login";
 connection.query(sql, function (error, results, fields) {
   /* Send data via POST Method */
@@ -34,6 +34,7 @@ connection.query(sql, function (error, results, fields) {
   });
 });
 
+/* Database Item Entry Query */
 var itemTable = "SELECT * FROM cs_487_project.item_log";
 connection.query(itemTable, function (error, results, fields) {
   /* Send data via POST Method */
@@ -41,4 +42,16 @@ connection.query(itemTable, function (error, results, fields) {
     res.send(results);
   });
 });
+
+app.post('/itemClaim', function (req, res) {
+  res.send();
+  var itemTable = "UPDATE cs_487_project.item_log " +
+    "SET timestamp_claimed = , SET userIDNumber = " +
+    "WHERE timestamp = ";
+  connection.query(itemTable, function (error, results, fields) {
+    /* Send data via POST Method */
+
+  });
+});
+
 connection.end();
