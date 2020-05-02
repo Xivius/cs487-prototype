@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="eventHandlers.js"></script>
+    <script src="client.js"></script>
     <title>Login</title>
   </head>
 
@@ -21,7 +21,7 @@
       </div>
       <div class="col-md-3 text-center">
         <a href="dropOffLocations.html">
-          <button id="backButton" class="btn btn-outline-primary">
+          <button class="btn btn-outline-primary">
             Drop-Off Locations
           </button>
         </a>
@@ -34,7 +34,10 @@
         <form class="form-signin">
           <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
           <div id="error" class="d-none p-1 mb-3 pl-2 card card-body bg-light text-danger text-left">
-            Invalid Email ID or Password
+            Invalid Email
+          </div>
+          <div id="incorrect" class="d-none p-1 mb-3 pl-2 card card-body bg-light text-danger text-left">
+            Incorrect Email and/or Password
           </div>
           <label for="inputEmail" class="sr-only">Email address</label>
           <input id="email" type="email" id="inputEmail" class="form-control mb-2" placeholder="Email address" required autofocus>

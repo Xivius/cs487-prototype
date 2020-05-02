@@ -34,3 +34,13 @@ header h1 {
 .item-image {
   height: 270px;
 }
+
+/* itemEntryLog.html */
+/* itemClaimLog.html */
+td {
+  width: 15%;
+}
+
+td a {
+  word-break: break-all;
+}
