@@ -139,11 +139,7 @@ function main() {
         request.open("POST", "http://localhost:3000/itemClaim");
         request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         request.send();*/
-        itemClaimForm.addEventListener("click", function (e) {
-            e.preventDefault();
-            console.log('test');
-            history.back();
-        });
+        itemClaimForm.addEventListener("click", goBack);
     }
 
     /* Send user form data to server side script */
@@ -158,11 +154,7 @@ function main() {
 
     var itemEntryForm = document.getElementById("uploadEntry");
     if (itemEntryForm !== null) {
-        itemEntryForm.addEventListener("click", function (e) {
-            e.preventDefault();
-            console.log('test');
-            history.back();
-        });
+        itemEntryForm.addEventListener("click", goBack);
     }
 }
 
