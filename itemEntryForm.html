@@ -28,16 +28,16 @@
         <form>
           <h1 class="h3 mb-3 font-weight-normal text-center">Item Details Form</h1>
           <div class="form-group">
-            <label for="itemName">Item Name</label>
+            <label for="itemName">Item Name <span class="text-danger">*</span></label>
             <input type="name" class="form-control" id="itemName" placeholder="Enter Item Name">
           </div>
           <div class="form-group">
-            <label for="itemDescription">Item Description</label>
+            <label for="itemDescription">Item Description <span class="text-danger">*</span></label>
             <textarea row="3" class="form-control" id="itemDescription"
                 placeholder="Enter Item Description"></textarea>
           </div>
           <div class="form-group">
-            <label for="location">Location</label>
+            <label for="location">Location <span class="text-danger">*</span></label>
             <div class="input-group">
               <input type="text" class="form-control" id="location" placeholder="Enter Location">
               <div class="input-group-append">
@@ -55,21 +55,26 @@
           </div>
           <div class="form-group">
             <p>
-              <label for="date">Date Item was Found:</label>
+              <label for="date">Date Item was Found: <span class="text-danger">*</span></label>
               <input type="date" id="date">
             </p>
           </div>
           <div class="form-group">
             <p>
-              <label for="time">Time Item was Found:</label>
+              <label for="time">Time Item was Found: <span class="text-danger">*</span></label>
               <input type="time" id="time">
               <small>(hh:mm ss)</small>
             </p>
           </div>
           <div class="form-group">
             <p>
-              <label>Item Photo: </label>
-              <button class="btn btn-sm btn-secondary">Upload</button>
+              <label>Item Photo: <span class="text-danger">*</span></label>
+              <input type="file" class="bg-secondary d-block" id="photoID">
+            </p>
+          </div>
+          <div class="mt-5">
+            <p>
+              <span class="text-danger">*</span> must be filled out
             </p>
           </div>
           <button class="btn btn-lg btn-primary float-right"

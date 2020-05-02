@@ -35,11 +35,11 @@
         <form>
           <h1 class="h3 mb-3 font-weight-normal text-center">Item Claim Form</h1>
           <div class="form-group">
-            <label for="itemName">Item Name</label>
+            <label for="itemName">Item Name <span class="text-danger">*</span></label>
             <input type="name" class="form-control" id="itemName" placeholder="Enter Item Name">
           </div>
           <div class="form-group">
-            <label for="itemDescription">Select Item from Lost Item List</label>
+            <label for="itemDescription">Select Item from Lost Item List <span class="text-danger">*</span></label>
             <table class="table">
               <thead>
                 <tr>
@@ -55,8 +55,13 @@
             </table>
           </div>
           <div class="form-group mt-2">
-            <label>Upload Photo ID: </label>
+            <label>Upload Photo ID: <span class="text-danger">*</span></label>
             <input type="file" class="bg-secondary d-block" id="photoID">
+          </div>
+          <div class="mt-5">
+            <p>
+              <span class="text-danger">*</span> must be filled out
+            </p>
           </div>
           <button class="btn btn-lg btn-primary float-right"
             type="submit" id="uploadClaim">Submit</button>
