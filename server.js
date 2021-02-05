@@ -3,6 +3,7 @@ const fs = require('fs');
 const mysql = require('mysql');
 const app = express();
 
+// Need to run http-server to be able to serve html pages
 app.listen(3000);
 
 /* CORS Headers */
@@ -13,7 +14,7 @@ app.use(function(req, res, next) {
 });
 
 /* Read from DB Credentials File */
-var data = fs.readFileSync('../DBAccess.json', 'utf8');
+var data = fs.readFileSync('./DBAccess.json', 'utf8');
 var credentials = JSON.parse(data);
 
 /* Database Connection */
